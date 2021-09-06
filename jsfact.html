@@ -1,0 +1,49 @@
+<html>
+<html>
+<body>
+<form>
+<p>Number:</p>
+<input type ="number" id="numb" name="numb"><br>
+<input type = "submit" id="submit" name="Factorial" onclick ="fact()">Factorial<br>
+<input type = "submit" id="Fibo" name = "Fibo" onclick = "fibo">Fibonacci
+</form>
+<script>
+var fact;
+
+function fact(n){
+
+var n =document.getElementById("numb");
+n=n.value;
+if(n.length>3)
+{
+window.alert("Enter a number with 3 digits or less");
+return 0;
+}
+else
+fact = factorial(n);
+window.alert(fact);
+}
+
+function fibo(n)
+{
+if (n==0)
+{
+window.alert("Select a number greater than 0");
+//return 0;
+}
+else if(n==1){
+return 0;}
+}
+function factorial(n)
+{
+
+//n=n.value;
+if(n==1){
+return 1;}
+else{
+return (n*factorial(n-1));
+}}
+//window.alert(number);
+</script>
+</body>
+</html>
