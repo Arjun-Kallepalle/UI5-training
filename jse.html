@@ -1,0 +1,47 @@
+<html>
+<body>
+<form>
+<p>NAME:</p>
+<input type="text" id="name" name="name">
+<br><br>
+<p>EMAIL:</p>
+<input type = "text" id="email" name="email">
+<br><br>
+<p>PHONE:</p>
+<input type = "number" id="phone" name="phone"><br><br>
+<input type ="submit" id="submit" onclick="test()" name="submit">
+
+</form>
+<script>
+function test(){
+var name = document.getElementById("name");
+var phone = document.getElementById("phone");
+var typen = typeof name.value;
+var typep = typeof phone.value;
+
+if ( typen == "string")
+window.alert("type match!");
+else
+window.alert("type MISmatch");
+}
+if ( typep == "number")
+window.alert("type match!");
+else
+window.alert("type MISmatch");
+}
+
+function disp(){
+var name = document.getElementById("name");
+var email = document.getElementById("email");
+
+if (name.value != "" && email.value != "")
+//console.log(email.value);
+//console.log(name.value);
+var result = {"NAME":name, "EMAIL":email};
+console.log(result);
+}
+
+</script>
+
+</body>
+</html>
