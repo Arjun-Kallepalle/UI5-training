@@ -1,0 +1,48 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="Calc.css">
+    </head>
+    <body>
+        <div class="Panel">
+            <br><br>
+            <form>
+                <input class="A"  type="text" name="screen" id="screen">
+            </form>
+            <div class="Keys">
+                <span class="key" onClick="Entered(this)" id="7">7</span>
+                <span class="key" onClick="Entered(this)" id="8">8</span>
+                <span class="key" onClick="Entered(this)" id="9">9</span>        
+                <span class="key" onClick="Entered(this)" id="*">*</span>
+            </div>
+            <br>
+            <div class="Keys">
+                <span class="key" onClick="Entered(this)" id="4">4</span>
+                <span class="key" onClick="Entered(this)" id="5">5</span>
+                <span class="key" onClick="Entered(this)" id="6">6</span>        
+                <span class="key" onClick="Entered(this)" id="+">+</span>
+            </div>
+            <br>
+            <div class="Keys">
+                <span class="key" onClick="Entered(this)" id="1">1</span>
+                <span class="key" onClick="Entered(this)" id="2">2</span>
+                <span class="key" onClick="Entered(this)" id="3">3</span>        
+                <span class="key" onClick="Entered(this)" id="-">-</span>
+            </div>
+            <br>
+            <div class="Keys">
+                <span class="key" onClick="Entered(this)" id="0">0</span>
+                <span class="key" onClick="Entered(this)" id="."> . </span>
+                <span class="key" onClick="Entered(this)" id="_">BS</span>        
+                <!-- <span class="key" onClick="Entered(this)">=</span> -->
+                <span class="key" onClick="Entered(this)" id="/">/</span>                
+            </div>
+            <br>
+            <div class="Keys">
+                <span class="Equals" style="width:50%" onclick = "Entered(this)" id="="> = </span>
+                <span class="Equals" style = "width:10%" onclick = "clean()" id = "C">C</span>
+            </div>
+        </div>
+    </body>
+    <script src="Calcu.js"></script>
+</html>
